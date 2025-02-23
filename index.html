@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Abhiraj Mishra - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
 
 <body>
-    <video class="background_video" autoplay muted loop playsinline poster="background.jpg">
-        <source src="https://shorturl.at/7dRp1" type="video/mp4">
+    <video id="backgroundVideo" class="background_video" autoplay muted loop playsinline poster="background.jpg">
+        <source src="back.mp4" type="video/mp4">
+        <source src="background.h264" type="video/h264">
         <source src="background.webm" type="video/webm">
         Your browser does not support the video tag.
     </video>
@@ -26,11 +28,92 @@
             <li><a href="#">Link #</a></li>
         </ul>
     </nav>
-    
+    <script>
+        const video = document.getElementById('backgroundVideo');
+        const source = document.getElementById('videoSource');
 
-    </div>
+        const isFirefox = typeof InstallTrigger !== 'undefined';
+        const isChromium = !!window.chrome;
 
+        if (isFirefox) {
+            source.src = 'background.h264';
+            source.type = 'video/h264';
+        } else if (isChromium) {
+            source.src = 'back.mp4';
+            source.type = 'video/mp4';
+        } else {
+            source.src = 'background.webm';
+            source.type = 'video/webm';
+        }
 
+        video.load();
+    </script>
+
+    <main class="container">
+        <section class="hero">
+            <h1 class="hi">Hi, I am</h1>
+            <h1 class="name">Abhiraj Mishra</h1>
+            <h3 class="introducing">A passionate and aspiring software developer</h3>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">P1</div>
+                <div class="skill-card">P2</div>
+                <div class="skill-card">P3</div>
+                <div class="skill-card">P4</div>
+                <div class="skill-card">P5</div>
+                <div class="skill-card">P6</div>
+            </div>
+        </section>
+
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project1.jpg" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Project Title 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project2.jpg" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Project Title 2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                    </div>
+                </div>
+
+                <!-- Add more project cards as needed -->
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <!-- Add your contact information here -->
+            </div>
+        </section>
+
+        <section class="thank-you">
+            <div class="thank-you-content">
+                <h2>Thank You</h2>
+                <p>Thank you for visiting my portfolio. I'm looking forward to connecting with you!</p>
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
