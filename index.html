@@ -30,23 +30,19 @@
     </nav>
     <script>
         const video = document.getElementById('backgroundVideo');
-        const source = document.getElementById('videoSource');
-
         const isFirefox = typeof InstallTrigger !== 'undefined';
         const isChromium = !!window.chrome;
 
         if (isFirefox) {
-            source.src = 'background.h264';
-            source.type = 'video/h264';
+            video.src = 'background.h264';
         } else if (isChromium) {
-            source.src = 'back.mp4';
-            source.type = 'video/mp4';
+            video.src = 'back.mp4';
         } else {
-            source.src = 'background.webm';
-            source.type = 'video/webm';
+            video.src = 'background.webm';
         }
 
         video.load();
+
     </script>
 
     <main class="container">
@@ -62,8 +58,8 @@
                 <div class="skill-card">python</div>
                 <div class="skill-card">Web Dev</div>
                 <div class="skill-card">Dev Ops</div>
-                <div class="skill-card">Ardino</div>
-                <div class="skill-card">C language set</div>
+                <div class="skill-card">Arduino</div>
+                <div class="skill-card">C Programming</div>
                 <div class="skill-card">App Dev</div>
             </div>
         </section>
@@ -77,7 +73,8 @@
                     </div>
                     <div class="project-info">
                         <h3>Multimedia Player Webpage</h3>
-                        <p>A simple webpage featuring custom audio and video players. It allows users to upload and play multimedia files directly in the browser with easy-to-follow setup instructions.</p>
+                        <p>A simple webpage featuring custom audio and video players. It allows users to upload and play
+                            multimedia files directly in the browser with easy-to-follow setup instructions.</p>
                     </div>
                 </div>
 
@@ -87,7 +84,8 @@
                     </div>
                     <div class="project-info">
                         <h3>Nature-Themed Information Card</h3>
-                        <p>A beautifully styled information card using HTML and CSS. It showcases an image, tags, and descriptive text, with a clean, responsive design and a call-to-action button.</p>
+                        <p>A beautifully styled information card using HTML and CSS. It showcases an image, tags, and
+                            descriptive text, with a clean, responsive design and a call-to-action button.</p>
                     </div>
                 </div>
 
@@ -108,8 +106,9 @@
         <section class="contact">
             <h2>Contact</h2>
             <div class="contact-info">
-                <p>email - <a href="https://abhirajmishra06office@gmail.com" target="_blank" >abhirajmishra06office@gmail.com</a></p>
-                <p>mobile no. - <a href="https://+910000000000" target="_blank" >+91-000 000 0000</a></p>
+                <p>email - <a href="https://abhirajmishra06office@gmail.com"
+                        target="_blank">abhirajmishra06office@gmail.com</a></p>
+                <p>mobile no. - <a href="https://+910000000000" target="_blank">+91-000 000 0000</a></p>
             </div>
         </section>
 
@@ -119,7 +118,8 @@
                 <p>Thank you for visiting my portfolio. I'm looking forward to connecting with you!</p>
                 <div class="social-links">
                     <a href="https://github.com/IT69godYash" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/abhiraj-mishra" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/abhiraj-mishra" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
                     <a href="https://x.com/AbhirajMis62754" target="_blank"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>

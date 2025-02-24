@@ -12,7 +12,7 @@ body {
     background-color: #07233c;
     color: #ffffff;
     min-height: 100vh;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .background_video{
@@ -316,5 +316,35 @@ body {
     
     .thank-you p {
         font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding-left: 20px;
+        text-align: center;
+    }
+
+    .name {
+        font-size: 4rem;
+    }
+
+    .hi {
+        font-size: 3rem;
+    }
+
+    .introducing {
+        font-size: 1.5rem;
+        top: 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
     }
 }
