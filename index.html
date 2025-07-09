@@ -12,14 +12,9 @@
 
 <body>
 
-    <!-- <audio src="backaudio.mp3" autoplay loop></audio> -->
+    <audio class="background-audio" src="backaudio.mp3" autoplay loop></audio>
 
-    <video id="backgroundVideo" class="background_video" autoplay loop muted playsinline poster="background.jpg">
-        <source src="back.mp4" type="video/mp4">
-        <source src="background.h264" type="video/h264">
-        <source src="background.webm" type="video/webm">
-        Your browser does not support the video tag.
-    </video>
+    <div class="background-image"></div>
 
     <nav class="navbar">
         <div class="logo">
@@ -31,22 +26,6 @@
             <li><a href="#">Link #</a></li>
         </ul>
     </nav>
-    <script>
-        const video = document.getElementById('backgroundVideo');
-        const isFirefox = typeof InstallTrigger !== 'undefined';
-        const isChromium = !!window.chrome;
-
-        if (isFirefox) {
-            video.src = 'background.h264';
-        } else if (isChromium) {
-            video.src = 'back.mp4';
-        } else {
-            video.src = 'background.webm';
-        }
-
-        video.load();
-
-    </script>
 
     <main class="container">
         <section class="hero">
@@ -120,7 +99,7 @@
                 <h2>Thank You</h2>
                 <p>Thank you for visiting my portfolio. I'm looking forward to connecting with you!</p>
                 <div class="social-links">
-                    <a href="https://github.com/IT69godYash" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/abhiraj-mishra" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/abhiraj-mishra" target="_blank"><i
                             class="fab fa-linkedin"></i></a>
                     <a href="https://x.com/AbhirajMis62754" target="_blank"><i class="fab fa-twitter"></i></a>
