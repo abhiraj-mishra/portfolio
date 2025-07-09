@@ -22,7 +22,7 @@ Or simply open index.html in any browser of your choice.
 
 ## 📸 Preview
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](./preview.png)
 
 ## 🛠️ Features
 
