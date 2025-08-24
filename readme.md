@@ -7,7 +7,7 @@ This is my basic portfolio built entirely with HTML and CSS. It showcases my ski
 Clone the repository and navigate to the project directory:
 
 ```bash
-git clone https://github.com/IT69godYash/portfolio.git
+git clone https://github.com/abhiraj-mishra/portfolio.git
 cd portfolio
 ```
 
